@@ -1,0 +1,103 @@
+/* Default theme (light theme) */
+:root {
+	--darkmode-color-white: #fff;
+	--darkmode-text-color-gray: #585c7b;
+	--primary-darkmode-background-color: #0b0f19;
+	--secondary-darkmode-background-color: #131720;
+	--color-header-footer: #1b1d2e;
+}
+* {
+	transition: all 0.3s ease-in-out;
+}
+
+/* Dark theme */
+.dark-mode {
+	header {
+		background-color: var(--color-header-footer);
+	}
+
+	.logo-text {
+		color: var(--darkmode-color-white);
+	}
+	h2 {
+		color: var(--darkmode-color-white);
+	}
+	h3 {
+		color: var(--darkmode-color-white);
+	}
+	.main-description {
+		color: var(--darkmode-color-white);
+		opacity: 70%;
+		font-weight: 600;
+	}
+	span {
+		color: var(--darkmode-color-white);
+	}
+	.darkmode {
+		color: var(--darkmode-color-white);
+	}
+
+	.app-link {
+		background-color: var(--darkmode-color-white);
+		color: var(--darkmode-text-color-gray);
+	}
+	.apple {
+		filter: brightness(30%);
+	}
+
+	.app-description-small {
+		color: var(--darkmode-color-white--darkmode-text-color-gray);
+		font-weight: 600;
+	}
+	.app-description-big {
+		color: var(--darkmode-color-white--darkmode-text-color-gray);
+	}
+	.discover {
+		color: var(--darkmode-color-white);
+	}
+	#page2 {
+		background-color: var(--primary-darkmode-background-color);
+	}
+	p {
+		color: var(--darkmode-color-white);
+		font-weight: 400;
+		opacity: 70%;
+	}
+	#page3 {
+		background-color: var(--secondary-darkmode-background-color);
+		opacity: 95%;
+	}
+
+	.icon {
+		background-color: #181921;
+	}
+	.how-small {
+		color: var(--darkmode-text-color-gray);
+		opacity: 100%;
+	}
+	#page4 {
+		background-color: var(--primary-darkmode-background-color);
+	}
+	footer {
+		background-color: var(--primary-darkmode-background-color);
+	}
+	.subscribe-text {
+		color: var(--darkmode-color-white);
+	}
+	.subscribe-wrapper {
+		background-color: var(--secondary-darkmode-background-color);
+	}
+}
+
+header,
+footer {
+	background-color: var(--color-header-footer);
+}
+
+.dark-mode #page1 {
+	/* background-color: linear-gradient(to top, #6366f1 0%, #da46ef 42%, #f1f4fd 83%); */
+	background-color: var(--primary-darkmode-background-color);
+	h1 {
+		color: var(--darkmode-color-white);
+	}
+}
