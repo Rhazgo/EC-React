@@ -111,7 +111,7 @@ export const Page4 = () => {
 								<div className="contact-tablet">
 									<div className="contact-phone">
 										<img src={phoneicon} alt="Phone Icon" />
-										<h4>Still have questions?</h4>
+										<h4 className="h4">Still have questions?</h4>
 
 										<div className="contact-us">
 											<a href="" className="contact-us-blue">
@@ -123,7 +123,7 @@ export const Page4 = () => {
 
 									<div className="contact-message">
 										<img src={messageicon} alt="Green message icon" />
-										<h4>Don't like phone calls?</h4>
+										<h4 className="h4">Don't like phone calls?</h4>
 
 										<div className="contact-us">
 											<a href="" className="contact-us-green">

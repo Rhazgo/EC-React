@@ -45,8 +45,13 @@ export const Page4desktop = () => {
 						<div className="bottom-1-right">
 							<h2>Recive payment from international bank details</h2>
 							<div className="payments-icons">
-								<img src={payments} alt="Credit card icon" />
-								<img src={cashback} alt="Wallet icon" />
+								<div className="icon">
+								<img className="icon-image" src={payments} alt="Easy payment icon" />
+
+								</div>
+								<div className="icon">
+									<img src={cashback} alt="Wallet icon" />
+								</div>
 							</div>
 							<div className="payments-underline">
 								<p>Manage your payments online. Mollis congue egestas egestas fermentum fames.</p>

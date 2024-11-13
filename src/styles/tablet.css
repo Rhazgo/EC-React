@@ -9,10 +9,10 @@
 		padding-bottom: 0;
 	}
 	#page1 .container {
-		/* height: 100vh; */
+		position: relative;
 	}
+
 	.header {
-		margin: 0;
 	}
 	.darkmode {
 		display: block;
@@ -29,9 +29,11 @@
 		min-width: 442px;
 		margin-top: 2rem;
 		font-size: 44px;
+		margin-bottom: 2rem;
 	}
 	.main-content {
 		display: flex;
+		/* position: relative; */
 	}
 	.main-content-image-desktop {
 		display: none;
@@ -41,14 +43,9 @@
 		display: flex;
 		position: absolute;
 		bottom: 0;
-		right: 5%;
-		height: auto;
+		right: 0;
 	}
-	.main-content-image img {
-		justify-self: center;
-		align-self: center;
-		max-width: 100%;
-	}
+
 	.main-dnb {
 		display: flex;
 		flex-direction: column;
@@ -77,6 +74,27 @@
 	.brands-tablet {
 		display: flex;
 		margin-bottom: 35px;
+		align-items: center;
+		justify-content: center;
+	}
+	.brand:nth-child(5n) {
+		display: none;
+	}
+	.brand:nth-child(6n) {
+		display: none;
+	}
+	.brand {
+		/* padding: 1rem; */
+		border: 1px solid #e2e5f1;
+		max-width: 196px;
+		height: 100px;
+		margin-inline: 0.5rem;
+		border-radius: 0.5rem;
+		img {
+			width: 100%;
+			height: 100%;
+			padding-inline: 0.5rem;
+		}
 	}
 	.mobilepage2 {
 		display: none;

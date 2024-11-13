@@ -15,7 +15,20 @@
 	header {
 		background-color: var(--color-header-footer);
 	}
-
+	.contact-page {
+		background-color: var(--primary-darkmode-background-color);
+		color: var(--darkmode-color-white);
+		h1 {
+			color: var(--darkmode-color-white);
+		}
+	}
+	.account-page {
+		background-color: var(--primary-darkmode-background-color);
+		color: var(--darkmode-color-white);
+		h1 {
+			color: var(--darkmode-color-white);
+		}
+	}
 	.logo-text {
 		color: var(--darkmode-color-white);
 	}
@@ -23,6 +36,9 @@
 		color: var(--darkmode-color-white);
 	}
 	h3 {
+		color: var(--darkmode-color-white);
+	}
+	h4 {
 		color: var(--darkmode-color-white);
 	}
 	.main-description {
@@ -58,6 +74,7 @@
 	#page2 {
 		background-color: var(--primary-darkmode-background-color);
 	}
+
 	p {
 		color: var(--darkmode-color-white);
 		font-weight: 400;
@@ -78,8 +95,38 @@
 	#page4 {
 		background-color: var(--primary-darkmode-background-color);
 	}
+	#page4-desktop {
+		background-color: var(--primary-darkmode-background-color);
+	}
+	.payments-icons img {
+		background: none;
+		padding: 0;
+		border-radius: 8px;
+	}
+	#page5-desktop {
+		background-color: var(--secondary-darkmode-background-color);
+	}
+	.review {
+		background-color: var(--color-header-footer);
+	}
+	.reviewers-info {
+		.name {
+			color: var(--darkmode-color-white);
+		}
+	}
+	.answer-tablet {
+		color: var(--darkmode-color-white);
+		font-weight: 600;
+		opacity: 70%;
+	}
 	footer {
 		background-color: var(--primary-darkmode-background-color);
+	}
+	.input-group {
+		input {
+			/* background-color: var(--secondary-darkmode-background-color); */
+			/* opacity: 10%; */
+		}
 	}
 	.subscribe-text {
 		color: var(--darkmode-color-white);

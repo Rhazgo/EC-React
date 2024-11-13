@@ -1,11 +1,6 @@
 @media (min-width: 1400px) {
 	.container {
-		max-width: 1680px;
-	}
-	#page1 .container {
-		height: calc(100vh - var(--header-height));
-		align-items: stretch;
-		justify-content: flex-end;
+		max-width: 1320px;
 	}
 
 	.menu-icon {
@@ -35,7 +30,7 @@
 		font-size: 56px;
 		font-weight: 800;
 		line-height: 130%;
-		max-width: 526px;
+		max-width: 525px;
 		margin-bottom: 1rem;
 	}
 	.main-title {
@@ -45,49 +40,40 @@
 		line-height: 130%;
 		max-width: 526px;
 	}
-	.main-content {
-		display: flex;
 
-		align-items: center;
-	}
 	.main-content-image {
 		display: none;
 	}
 	.main-content-image-desktop {
 		display: flex;
-		flex: 0 1 auto;
-		align-self: flex-end;
 		position: absolute;
 		bottom: 0;
-		right: 5%;
-		margin-bottom: 0;
+		right: 0;
 	}
-	.main-dnb {
-		gap: 1rem;
-		margin-top: 1rem;
-		margin-bottom: 2rem;
-	}
-	.app-buttons {
-		margin-bottom: 1rem;
-		gap: 24px;
-		/* margin-bottom: 5rem; */
+	*/ .app-buttons {
+		gap: 1.5rem;
 	}
 	.app-link {
 		width: 180px;
 		height: 52px;
 	}
 	.main-description {
-		width: 526px;
+		width: 525px;
 	}
 
 	.discover {
-		margin-top: 12rem;
+		margin-top: 14rem;
 	}
 	.brands-tablet {
-		display: none;
+	}
+	.brand:nth-child(5n) {
+		display: flex;
+	}
+	.brand:nth-child(6n) {
+		display: flex;
 	}
 	.brands-desktop {
-		display: flex;
+		display: inline-flex;
 		margin-top: 96px;
 		margin-bottom: 112px;
 		margin-left: 0.8rem;
@@ -144,6 +130,7 @@
 		display: flex;
 		background-color: #fff;
 	}
+
 	#page5-desktop {
 		display: flex;
 		background-color: #f3f6ff;
@@ -247,9 +234,48 @@
 		font-weight: 800;
 		color: #0b0f19;
 	}
-	.our-clients img {
-		margin-bottom: 112px;
+	.review {
+		background-color: #fff;
+		margin-left: 1.5rem;
+		padding-block: 3rem;
+		margin-block: 2rem;
+		padding: 1.5rem;
+		max-width: 416px;
+		p {
+			margin-top: 1.5rem;
+			margin-bottom: 1.5rem;
+			font-size: 18px;
+		}
+		.stars {
+			margin-top: 1.5rem;
+		}
+		.reviewer {
+			display: flex;
+			align-items: center;
+		}
+		.reviewers-info {
+			display: flex;
+			flex-direction: column;
+			margin-left: 1rem;
+			.name {
+				color: #0b0f19;
+				font-weight: 600;
+			}
+			.profession {
+				color: #9397ad;
+			}
+		}
 	}
+
+	.quotes {
+		position: absolute;
+
+		margin-left: 2.4rem;
+		margin-bottom: 2rem;
+	}
+	/* .our-clients img {
+		margin-bottom: 112px;
+	} */
 
 	.contact-desktop {
 		display: flex;
@@ -260,13 +286,18 @@
 	}
 	.contact-tablet {
 		grid-column: 1;
+		h4 {
+			font-size: 14px;
+		}
 	}
 	.contact-option {
 		display: flex;
 		align-items: center;
 		height: 44px;
 	}
-
+	.contact-us {
+		font-size: 14px;
+	}
 	.contact-us img {
 		height: 24px;
 		width: auto;
@@ -282,6 +313,11 @@
 		flex-direction: column;
 		text-align: left;
 		margin: 0;
+		max-width: 416px;
+		h2 {
+			line-height: 130%;
+			max-width: 340px;
+		}
 	}
 	.questions-introduction h2 {
 		text-align: left;

@@ -1,6 +1,12 @@
 import React from 'react';
 import Brandstablet from '../../assets/brands-tablet.svg';
-import Logos from '../../assets/Logos.svg';
+import brand1 from '../../assets/logo1.svg';
+import brand2 from '../../assets/logo2.svg';
+import brand3 from '../../assets/logo3.svg';
+import brand4 from '../../assets/logo4.svg';
+import brand5 from '../../assets/logo5.svg';
+import brand6 from '../../assets/logo6.svg';
+
 import mobilepage2 from '../../assets/mobilepage2.svg';
 import payments from '../../assets/payments.svg fill.svg';
 import statistics from '../../assets/statistics.svg.svg';
@@ -16,11 +22,25 @@ export const Page2 = () => {
 				<div className="app-features">
 					<div className="container">
 						<div className="brands-tablet">
-							<img src={Brandstablet} alt="pictures of brands" />
-						</div>
+							<div className="brand">
+								<img id="brand1" src={brand1} alt="picture of brand" />
+							</div>
+							<div className="brand">
+								<img id="brand2" src={brand2} alt="picture of brand" />
+							</div>
+							<div className="brand">
+								<img id="brand3" src={brand3} alt="picture of brand" />
+							</div>
+							<div className="brand">
+								<img id="brand4" src={brand4} alt="picture of brand" />
+							</div>
 
-						<div className="brands-desktop">
-							<img src={Logos} alt="pictures of brands" />
+							<div className="brand">
+								<img id="brand5" src={brand5} alt="pictures of brands" />
+							</div>
+							<div className="brand">
+								<img id="brand6" src={brand6} alt="pictures of brands" />
+							</div>
 						</div>
 
 						<div className="main-page2">

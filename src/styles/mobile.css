@@ -13,7 +13,9 @@
 	--header-height: 52px;
 }
 
-* {
+*,
+*::before,
+*::after {
 	font-family: manrope, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
 		'Open Sans', 'Helvetica Neue', sans-serif;
 	padding: 0;
@@ -37,7 +39,7 @@ html {
 
 .page {
 	padding-block: 35px;
-	min-width: 260px;
+	min-width: 290px;
 }
 
 body {
@@ -52,6 +54,7 @@ body {
 	/* Hjälp från en vän */
 	height: calc(100vh - var(--header-height));
 }
+
 .main-title-desktop {
 	display: none;
 }
@@ -64,6 +67,9 @@ body {
 	z-index: 1000;
 	background-color: var(--header-color);
 	height: var(--header-height);
+	min-width: 290px;
+
+	/* margin-block: 1rem; */
 }
 
 .header .container {
@@ -75,29 +81,73 @@ body {
 	align-items: center;
 	background-color: transparent;
 }
+.breadcrumb li + li::before {
+	content: ' / ';
+	padding: 0 5px;
+}
+.contact-page {
+	background-color: var(--primary-background-color);
+}
+.page-name {
+	justify-self: center;
+	font-weight: 800;
+	color: var(--primary-text-color);
+	padding-block: 1rem;
+}
+.breadcrumb li {
+	color: var(--primary-text-color);
+}
+.breadcrumb a {
+	color: var(--extended-arrow-background-color);
+	text-decoration: none;
+}
+.breadcrumb {
+	padding-bottom: 1rem;
+	margin-bottom: 0;
+}
 
 #page1 .container {
-
-	/* justify-content: space-between; */
 	height: 100vh;
 }
 
 .nav-left {
 	display: flex;
 	align-items: center;
+	gap: 2rem;
 	cursor: pointer;
 }
 
-.logo {
-	width: 50px;
-	height: auto;
+.logo img {
+	vertical-align: middle;
 }
 
 .logo-text {
+	vertical-align: middle;
 	font-size: 24px;
 	font-weight: 800;
 	color: var(--primary-text-color);
-	margin-left: 10px;
+	margin-left: 1rem;
+}
+.features-link {
+	display: none;
+	vertical-align: middle;
+	font-size: 1rem;
+	font-weight: 600;
+	justify-self: center;
+	color: var(--primary-text-color);
+	margin-left: 1rem;
+	text-decoration: none;
+}
+.contact-link {
+	display: none;
+
+	vertical-align: middle;
+	font-size: 1rem;
+	font-weight: 600;
+	justify-self: center;
+	color: var(--primary-text-color);
+
+	text-decoration: none;
 }
 
 .nav-right {
@@ -219,7 +269,6 @@ input[type='checkbox']:checked ~ .slider {
 	flex-direction: column;
 	margin-bottom: 3rem;
 	gap: 1rem;
-	
 }
 
 .app-link {
@@ -239,7 +288,6 @@ input[type='checkbox']:checked ~ .slider {
 		margin-left: 0.3rem;
 	}
 	.appstore {
-
 	}
 }
 
@@ -585,6 +633,7 @@ input[type='checkbox']:checked ~ .slider {
 	width: 100%;
 	height: 50px;
 	margin-inline: 12px;
+	flex-wrap: nowrap;
 }
 
 .email-icon {
@@ -594,13 +643,16 @@ input[type='checkbox']:checked ~ .slider {
 	padding-left: 1rem;
 	height: 100%;
 }
-
+.input-group > input[type='email'] {
+	border-top-left-radius: 8px !important;
+	border-bottom-left-radius: 8px !important;
+}
 input[type='email'] {
 	width: 70%;
 	padding: 10px;
 	padding-left: 3rem;
-	border: 1px solid #e2e5f1;
 	border-radius: 8px 0 0 8px;
+
 	outline: none;
 	font-size: 14px;
 	border: 2px solid #d4d7e5;
@@ -624,9 +676,6 @@ button[type='submit'] {
 
 button[type='submit']:hover {
 	background-color: #5b4fcf;
-}
-.input-group {
-	flex-wrap: nowrap;
 }
 
 .silicon-rights {
