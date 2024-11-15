@@ -1,12 +1,203 @@
-.container {
+.contact-page .container {
+	/* background-color: #F3F6FF; */
 }
-.contact_page {
-  background-color: #F3F6FF;
-  height: 100vh;
-  width: 100%;
-  margin-bottom: 2rem;
-  border-radius: .5rem;
+.contact__page1 {
+	display: flex;
+	background-color: #f3f6ff;
+	width: 100%;
+	margin-bottom: 2rem;
+	border-radius: 0.5rem;
+	justify-content: space-between;
 }
-.contact_page h1 {
-  margin-block: 1rem;
+.contact__page1_content-left {
+	margin-left: 1rem;
+	margin-top: 1rem;
+	h1 {
+		margin-bottom: 4rem;
+		color: black;
+		font-weight: 800;
+	}
+}
+.contact__page1_content-right {
+	margin-right: 1rem;
+	/* position: relative; */
+}
+.contact__page1_content_contacts {
+	display: flex;
+	flex-direction: row;
+	max-width: 390px;
+	img {
+		align-self: flex-start;
+	}
+}
+.contact__page1_content_contact {
+	margin-left: 1rem;
+	margin-bottom: 3rem;
+
+	h3 {
+		font-weight: 800;
+		color: black;
+		margin-bottom: 1rem;
+	}
+}
+.linkToMessage {
+	margin-top: 1rem;
+	display: flex;
+	text-decoration: none;
+	img {
+		align-self: center;
+		margin-left: 1rem;
+	}
+}
+
+.linkToApplication {
+	margin-top: 1rem;
+	display: flex;
+	text-decoration: none;
+	img {
+		align-self: center;
+		margin-left: 1rem;
+	}
+}
+.consultationForm {
+	background-color: #fff;
+	padding: 4.5rem;
+	border-radius: 0.5rem;
+	/* position: absolute;
+  right: 0; */
+	/* min-width: 636px; */
+	margin: 1rem;
+
+	label {
+		background-color: #fff;
+		font-weight: 600;
+	}
+}
+.dropdown {
+	position: relative;
+	width: 100%;
+}
+
+.dropdown-toggle {
+	cursor: pointer;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #fff;
+	color: black;
+}
+.dropdown-toggle::after {
+	display: none;
+}
+
+.dropdown-arrow {
+	width: 12px;
+	height: 12px;
+	transition: transform 0.3s;
+}
+
+.dropdown-arrow.open {
+	transform: rotate(180deg);
+}
+
+.dropdown-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-top: 5px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+	max-height: 150px;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.dropdown-item {
+	padding: 10px;
+	cursor: pointer;
+	background-color: #fff;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.dropdown-item:hover {
+	background-color: #f0f0f0;
+}
+
+.dropdown-item:last-child {
+	border-bottom: none;
+}
+.appointment-btn {
+	justify-self: center;
+	background-color: #6c5ce7;
+	margin-top: 4rem;
+	color: #fff;
+	padding: 1rem;
+	width: 100%;
+	text-align: center;
+	border-radius: 0.5rem;
+}
+.success-message {
+	max-width: 300px;
+	text-align: center;
+	justify-self: center;
+}
+.contact__page2_content {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 2rem;
+	h3 {
+		font-weight: 800;
+		color: black;
+	}
+}
+.mappicture {
+	max-height: 540px;
+	max-width: 636px;
+}
+.medicalCenter {
+	flex-direction: row;
+	margin-bottom: 2rem;
+}
+.medicalCenter_content {
+	display: flex;
+	margin-bottom: 1rem;
+
+	img {
+		align-self: flex-start;
+		margin-top: 0.1rem;
+		margin-right: 0.5rem;
+	}
+	a {
+		text-decoration: none;
+	}
+}
+.medical_info {
+	flex-direction: row;
+}
+.time-open {
+	display: flex;
+	flex-direction: column;
+}
+.socialmedia {
+	display: flex;
+	a {
+		background-color: #f3f6ff;
+		padding-block: 0.8rem;
+		padding-inline: 1rem;
+		margin-right: 1rem;
+		border-radius: 0.5rem;
+	}
+	img {
+		justify-content: center;
+		align-items: center;
+		margin-top: .3rem;
+	}
 }

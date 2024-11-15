@@ -1,0 +1,102 @@
+.account-page .container {
+	padding-bottom: 5rem;
+	min-width: 300px;
+	/* margin-bottom: 2rem; */
+
+}
+
+.member-benefits {
+	text-align: center;
+	color: #585c7b;
+	margin: 2rem auto;
+	min-width: 270px;
+	background-color: #f3f6ff;
+	padding: 2rem;
+	width: 50%;
+	height: 50vh;
+	align-content: center;
+	border-radius: .5rem;
+}
+
+.member-benefits h2 {
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+	color: #333;
+}
+
+.customer-type h3 {
+	font-size: 1rem;
+	color: #333;
+	margin-bottom: 0.5rem;
+}
+
+.options {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+.option {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-size: 0.9rem;
+	color: #585c7b;
+	cursor: pointer;
+}
+
+.benefits-list {
+	list-style: none;
+	padding: 0;
+	margin: 1rem 0;
+	color: #585c7b;
+}
+
+.benefits-list li {
+	margin-bottom: 0.5rem;
+}
+
+.login-btn-signin {
+	width: 100%;
+	padding: 0.75rem;
+	margin: 0.5rem 0;
+	border: none;
+	border-radius: 0.5rem;
+  background-color: #6c5ce7;
+	color: white;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.bankid {
+	background-color: #00e0ff;
+}
+
+.email {
+	background-color: #00bfff;
+}
+
+.login-btn-signup {
+	width: 100%;
+	padding: 0.75rem;
+	margin-top: 1rem;
+	border: none;
+	border-radius: 0.5rem;
+  background-color: #3ecc62;
+
+	color: #fff;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.learn-more {
+	display: block;
+	margin-top: 1rem;
+	font-size: 0.8rem;
+	color: #00bfff;
+	text-decoration: none;
+}
+.learn-more:hover {
+	text-decoration: underline;
+}

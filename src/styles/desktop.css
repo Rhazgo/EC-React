@@ -40,7 +40,10 @@
 		line-height: 130%;
 		max-width: 526px;
 	}
-
+	.main-content {
+		display: flex;
+		flex-direction: row;
+	}
 	.main-content-image {
 		display: none;
 	}
@@ -56,13 +59,13 @@
 	.app-link {
 		width: 180px;
 		height: 52px;
+		/* margin-bottom: 11rem; */
 	}
 	.main-description {
 		width: 525px;
 	}
 
 	.discover {
-		margin-top: 14rem;
 	}
 	.brands-tablet {
 	}
@@ -140,11 +143,14 @@
 		gap: 134px;
 	}
 	.top-1-left {
+		display: flex;
+		flex-direction: column;
 		width: 416px;
 		margin-top: 211px;
 		margin-left: 6rem;
 	}
 	.top-1-left h2 {
+		text-align: left;
 		margin-bottom: 2rem;
 		font-size: 32px;
 		font-weight: 800;
@@ -165,20 +171,19 @@
 		flex-direction: column;
 		gap: 12px;
 	}
-	.learn-more {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin-top: 40px;
+
+	.learn-more-button {
 		background-color: #6366f1;
+		margin-top: 4rem;
+		color: #fff;
+		text-align: center;
+		border-radius: 0.5rem;
 		width: 159px;
 		height: 44px;
-		gap: 13px;
-		border-radius: 8px;
-	}
-	.learn-more-button {
-		color: #fff;
-		text-decoration: none;
+		border: none;
+		img {
+			margin-left: 1rem;
+		}
 	}
 	.bottom-1-left {
 		margin-left: 6rem;
@@ -197,6 +202,8 @@
 	}
 	.bottom-1-right h2 {
 		display: block;
+		text-align: left;
+
 		color: #0b0f19;
 		font-size: 32px;
 		font-weight: 800;
@@ -224,58 +231,80 @@
 
 	.our-clients {
 		display: flex;
-
+		justify-content: center; /* Centrerar testimonials på sidan */
+		align-items: flex-start; /* Justerar rubriken högre upp */
 		margin-top: 80px;
+		gap: 2rem; /* Mellanrum mellan korten */
 	}
-	.our-clients h2 {
-		margin-right: 120px;
-		font-size: 40px;
-		width: 306px;
-		font-weight: 800;
-		color: #0b0f19;
+
+	.clients {
+		margin-bottom: 2rem;
+		h2 {
+			text-align: left;
+			font-weight: 800;
+			max-width: 250px;
+			margin: 0;
+		}
 	}
+
 	.review {
 		background-color: #fff;
-		margin-left: 1.5rem;
-		padding-block: 3rem;
-		margin-block: 2rem;
-		padding: 1.5rem;
+		padding: 2rem;
 		max-width: 416px;
-		p {
-			margin-top: 1.5rem;
-			margin-bottom: 1.5rem;
-			font-size: 18px;
-		}
-		.stars {
-			margin-top: 1.5rem;
-		}
-		.reviewer {
-			display: flex;
-			align-items: center;
-		}
-		.reviewers-info {
-			display: flex;
-			flex-direction: column;
-			margin-left: 1rem;
-			.name {
-				color: #0b0f19;
-				font-weight: 600;
-			}
-			.profession {
-				color: #9397ad;
-			}
-		}
-	}
-
-	.quotes {
-		position: absolute;
-
-		margin-left: 2.4rem;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		border-radius: 8px; /* Rundar hörnen för att matcha designen */
+		position: relative;
 		margin-bottom: 2rem;
 	}
-	/* .our-clients img {
-		margin-bottom: 112px;
-	} */
+
+	.review::before {
+		content: '';
+		position: absolute;
+		top: -20px; /* Justera avståndet ovanför kortet */
+		left: 20px;
+		width: 24px;
+		height: 24px;
+		background-image: url('../../assets/quotes.svg');
+		background-size: cover;
+	}
+
+	.stars {
+		margin-top: 1rem;
+	}
+
+	.review p {
+		margin: 1.5rem 0;
+		font-size: 18px;
+		color: #333; /* Justera färgen för bättre kontrast */
+	}
+
+	.reviewer {
+		display: flex;
+		align-items: center;
+		margin-top: 1rem;
+	}
+
+	.reviewers-info {
+		display: flex;
+		flex-direction: column;
+		margin-left: 1rem;
+	}
+
+	.reviewers-info .name {
+		color: #0b0f19;
+		font-weight: 600;
+	}
+
+	.reviewers-info .profession {
+		color: #9397ad;
+		font-size: 14px;
+	}
+	.quotes {
+		position: absolute;
+		top: -10%;
+		left: 5%;
+		z-index: 1;
+	}
 
 	.contact-desktop {
 		display: flex;
@@ -361,4 +390,6 @@
 		grid-column: 2;
 		grid-row: 1 / 3;
 	}
+
+
 }

@@ -1,0 +1,81 @@
+
+.signInForm {
+	display: flex;
+	height: auto;
+	width: 50%;
+	min-width: 270px;
+	background-color: #f3f6ff;
+	border-radius: 0.5rem;
+	flex-direction: column;
+	justify-self: center;
+}
+
+.form-input-group {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h2 {
+	margin-block: 1rem;
+	color: black;
+	font-weight: 600;
+	text-align: center;
+}
+
+#sign-in-userName,
+#sign-in-password {
+	width: 80%;
+	font-size: 1rem;
+	margin-block: 1rem;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+}
+.sign-in-btn {
+	width: 60%;
+	align-self: center;
+	margin-top: 1rem;
+	background-color: #6366f1;
+	color: #fff;
+	border-radius: 0.5rem;
+	height: 3rem;
+	border: none;
+}
+.forgot-link {
+	text-decoration: none;
+	text-align: center;
+}
+.forgot-text:hover {
+	color: rgb(8, 23, 136);
+}
+.register {
+	align-self: center;
+	justify-content: center;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	h5 {
+		text-align: center;
+	}
+}
+.line-separator {
+	margin-top: 2rem;
+	border-bottom: 1px solid #585e73;
+	width: 100%;
+}
+
+.sign-up-btn {
+	width: 100%;
+	margin-top: 1rem;
+	border: none;
+	background-color: #3ecc62;
+	color: #fff;
+	border-radius: 0.5rem;
+	height: 3rem;
+	margin-bottom: 2rem;
+}
+.sign-up-link {
+	width: 75%;
+}

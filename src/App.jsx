@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Home from './views/Home';
 import About from './views/About';
 import Account from './views/Account';
@@ -24,7 +24,7 @@ const App = () => {
 					<Routes>
 						<Route path="/" element={<Home />} />
 						<Route path="/about" element={<About />} />
-						<Route path="/Account" element={<Account />} />
+						<Route path="/Account/*" element={<Account isDarkMode={isDarkMode} />} />
 						<Route path="/Contact" element={<Contact />} />
 						<Route path="/Features" element={<Features />} />
 					</Routes>

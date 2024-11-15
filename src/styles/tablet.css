@@ -14,6 +14,15 @@
 
 	.header {
 	}
+	.features-link {
+		display: flex;
+	}
+	.contact__page1 {
+		flex-direction: row;
+	}
+	.contact-link {
+		display: flex;
+	}
 	.darkmode {
 		display: block;
 		font-weight: 600;
@@ -200,10 +209,12 @@
 		margin: 0 auto;
 		/* padding: 1rem 0; */
 	}
+
+	
 	.question {
 		margin: 0.5rem;
-		border-radius: 12px; /* Rundade hörn */
-		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Lätt skugga för att ge ett upphöjt utseende */
+		border-radius: 12px; 
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
 		padding: 1rem 1.5rem;
 		border: 1px solid #e2e5f1;
 		cursor: pointer;
@@ -222,12 +233,12 @@
 	#third-question {
 		display: none;
 	}
-	.open-question-tablet {
+	/* .open-question-tablet {
 		display: flex;
 		flex-direction: column;
 		margin: 0.5rem;
-		border-radius: 12px; /* Rundade hörn */
-		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Lätt skugga för att ge ett upphöjt utseende */
+		border-radius: 12px; 
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
 		padding: 1rem 1.5rem;
 		border: 1px solid #e2e5f1;
 		cursor: pointer;
@@ -236,7 +247,7 @@
 		align-items: center;
 		padding-bottom: 24px;
 		width: 100%;
-	}
+	} */
 	.faq-and-arrow {
 		display: flex;
 		flex-direction: row;
@@ -354,6 +365,8 @@
 	.bell-icon {
 		margin-left: 24px;
 	}
+
+
 	.silicon-rights {
 		flex-direction: row;
 		justify-content: center;

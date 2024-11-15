@@ -24,14 +24,14 @@ export const Header = ({ onToggleDarkMode }) => {
 					<div className="darkmode">Dark Mode</div>
 					<div className="toggle-switch">
 						<label className="toggle">
-							<input type="checkbox" onChange={onToggleDarkMode} />
+							<input className='darkmode-toggle' type="checkbox" onChange={onToggleDarkMode} />
 							<span className="slider"></span>
 						</label>
 					</div>
 					<div className="menu-icon">
 						<img className="menu-icon-img" src={ToggleButton} alt="Menu Icon" />
 					</div>
-					<Link to={'Account'}>
+					<Link to={'/Account'}>
 						<div className="sign-in-button">
 							<img className="tinyman" src={tinyman} alt="Sign in/up button" />
 							<div className="sign-in-text">Sign in / up</div>

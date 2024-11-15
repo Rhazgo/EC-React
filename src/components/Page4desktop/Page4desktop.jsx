@@ -26,12 +26,11 @@ export const Page4desktop = () => {
 									<p>Manage payments and transactions online</p>
 								</div>
 							</div>
-							<div className="learn-more">
-								<a className="learn-more-button" type="button" href="">
-									Learn more
-								</a>
+
+							<button className="learn-more-button" href="">
+								Learn more
 								<img src={Arrowright} alt="Learn more button" />
-							</div>
+							</button>
 						</div>
 						<div className="top-1-right">
 							<img src={overtimegraph} alt="Money over time graph" />
@@ -46,8 +45,7 @@ export const Page4desktop = () => {
 							<h2>Recive payment from international bank details</h2>
 							<div className="payments-icons">
 								<div className="icon">
-								<img className="icon-image" src={payments} alt="Easy payment icon" />
-
+									<img className="icon-image" src={payments} alt="Easy payment icon" />
 								</div>
 								<div className="icon">
 									<img src={cashback} alt="Wallet icon" />
@@ -57,12 +55,10 @@ export const Page4desktop = () => {
 								<p>Manage your payments online. Mollis congue egestas egestas fermentum fames.</p>
 								<p>A elementur and imperdiet enim, pretium etiam facilisi aenean quam mauris.</p>
 							</div>
-							<div className="learn-more">
-								<a className="learn-more-button" type="button" href="">
-									Learn more
-								</a>
+							<button className="learn-more-button" href="">
+								Learn more
 								<img src={Arrowright} alt="Learn more button" />
-							</div>
+							</button>
 						</div>
 					</div>
 				</div>

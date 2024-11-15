@@ -5,146 +5,262 @@
 	--primary-darkmode-background-color: #0b0f19;
 	--secondary-darkmode-background-color: #131720;
 	--color-header-footer: #1b1d2e;
+	--transition-speed-regular: 0.3s ease-in-out;
+	--transition-speed-fast: 0.2s ease-in-out;
+	--transition-speed-fastest: 0.1s ease-in-out;
 }
 * {
-	transition: all 0.3s ease-in-out;
 }
 
 /* Dark theme */
 .dark-mode {
 	header {
 		background-color: var(--color-header-footer);
+		transition: var(--transition-speed-regular);
+	}
+	.feature-list {
+		background-color: var(--primary-darkmode-background-color);
+		h3,
+		h5,
+		p {
+			color: var(--darkmode-color-white);
+		}
 	}
 	.contact-page {
 		background-color: var(--primary-darkmode-background-color);
 		color: var(--darkmode-color-white);
+		transition: var(--transition-speed-regular);
+
 		h1 {
 			color: var(--darkmode-color-white);
+			transition: var(--transition-speed-regular);
+		}
+	}
+	.contact__page1 {
+		background-color: var(--primary-darkmode-background-color);
+	}
+	.contact__page2_content {
+		background-color: var(--primary-darkmode-background-color);
+	}
+	.contact__page2_content-right {
+		h3 {
+			color: var(--darkmode-color-white);
+		}
+	}
+	.contact__page1_content_contact {
+		h3 {
+			color: var(--darkmode-color-white);
+		}
+	}
+	.consultationForm {
+		background-color: var(--secondary-darkmode-background-color);
+		label {
+			background-color: var(--secondary-darkmode-background-color);
+			color: var(--darkmode-color-white);
+		}
+		.invalid-input {
+			background-color: var(--secondary-darkmode-background-color);
+		}
+	}
+	.socialmedia {
+		a {
+			background-color: var(--secondary-darkmode-background-color);
+		}
+		img {
+			filter: invert(100%);
 		}
 	}
 	.account-page {
 		background-color: var(--primary-darkmode-background-color);
 		color: var(--darkmode-color-white);
+		transition: var(--transition-speed-regular);
+
 		h1 {
 			color: var(--darkmode-color-white);
+			transition: var(--transition-speed-regular);
 		}
 	}
 	.logo-text {
 		color: var(--darkmode-color-white);
+		transition: var(--transition-speed-regular);
 	}
 	h2 {
 		color: var(--darkmode-color-white);
+		transition: var(--transition-speed-regular);
 	}
 	h3 {
 		color: var(--darkmode-color-white);
+		transition: var(--transition-speed-regular);
 	}
 	h4 {
 		color: var(--darkmode-color-white);
+		transition: var(--transition-speed-regular);
 	}
 	.main-description {
 		color: var(--darkmode-color-white);
 		opacity: 70%;
 		font-weight: 600;
+		transition: var(--transition-speed-regular);
 	}
 	span {
 		color: var(--darkmode-color-white);
+		transition: var(--transition-speed-regular);
 	}
 	.darkmode {
 		color: var(--darkmode-color-white);
+		transition: var(--transition-speed-regular);
 	}
 
 	.app-link {
 		background-color: var(--darkmode-color-white);
 		color: var(--darkmode-text-color-gray);
+		transition: var(--transition-speed-regular);
 	}
 	.apple {
 		filter: brightness(30%);
+		transition: var(--transition-speed-regular);
 	}
 
 	.app-description-small {
 		color: var(--darkmode-color-white--darkmode-text-color-gray);
 		font-weight: 600;
+		transition: var(--transition-speed-regular);
 	}
 	.app-description-big {
 		color: var(--darkmode-color-white--darkmode-text-color-gray);
+		transition: var(--transition-speed-regular);
 	}
 	.discover {
 		color: var(--darkmode-color-white);
+		transition: var(--transition-speed-regular);
 	}
 	#page2 {
 		background-color: var(--primary-darkmode-background-color);
+		transition: var(--transition-speed-regular);
 	}
 
 	p {
 		color: var(--darkmode-color-white);
 		font-weight: 400;
 		opacity: 70%;
+		transition: var(--transition-speed-regular);
 	}
 	#page3 {
 		background-color: var(--secondary-darkmode-background-color);
 		opacity: 95%;
+		transition: var(--transition-speed-regular);
 	}
 
 	.icon {
 		background-color: #181921;
+		transition: var(--transition-speed-regular);
 	}
 	.how-small {
 		color: var(--darkmode-text-color-gray);
 		opacity: 100%;
+		transition: var(--transition-speed-regular);
 	}
 	#page4 {
 		background-color: var(--primary-darkmode-background-color);
+		transition: var(--transition-speed-regular);
 	}
 	#page4-desktop {
 		background-color: var(--primary-darkmode-background-color);
+		transition: var(--transition-speed-regular);
 	}
 	.payments-icons img {
 		background: none;
 		padding: 0;
 		border-radius: 8px;
+		transition: var(--transition-speed-regular);
 	}
 	#page5-desktop {
 		background-color: var(--secondary-darkmode-background-color);
+		transition: var(--transition-speed-regular);
 	}
 	.review {
 		background-color: var(--color-header-footer);
+		transition: var(--transition-speed-regular);
 	}
 	.reviewers-info {
+		transition: var(--transition-speed-regular);
+
 		.name {
 			color: var(--darkmode-color-white);
+			transition: var(--transition-speed-regular);
 		}
 	}
 	.answer-tablet {
 		color: var(--darkmode-color-white);
 		font-weight: 600;
 		opacity: 70%;
+		transition: var(--transition-speed-regular);
 	}
 	footer {
 		background-color: var(--primary-darkmode-background-color);
+		transition: var(--transition-speed-regular);
 	}
 	.input-group {
+		transition: var(--transition-speed-regular);
+
 		input {
+			transition: var(--transition-speed-regular);
+
 			/* background-color: var(--secondary-darkmode-background-color); */
 			/* opacity: 10%; */
 		}
 	}
 	.subscribe-text {
 		color: var(--darkmode-color-white);
+		transition: var(--transition-speed-regular);
 	}
 	.subscribe-wrapper {
 		background-color: var(--secondary-darkmode-background-color);
+		transition: var(--transition-speed-regular);
+	}
+	.member-benefits {
+		background-color: var(--secondary-darkmode-background-color);
+		h2 {
+			color: var(--darkmode-color-white);
+		}
+	}
+	.signInForm {
+		background-color: var(--secondary-darkmode-background-color);
+	}
+	.forgot-password-content {
+		background-color: var(--secondary-darkmode-background-color);
+	}
+	.regForm {
+		background-color: var(--secondary-darkmode-background-color);
+		.regForm-input-group {
+			background-color: var(--secondary-darkmode-background-color);
+			label {
+				background-color: var(--secondary-darkmode-background-color);
+				color: var(--darkmode-color-white);
+			}
+		}
+		.tip {
+			background-color: var(--secondary-darkmode-background-color);
+		}
+		.invalid-input {
+			background-color: var(--secondary-darkmode-background-color);
+		}
 	}
 }
 
 header,
 footer {
 	background-color: var(--color-header-footer);
+	transition: var(--transition-speed-regular);
 }
 
 .dark-mode #page1 {
+	transition: var(--transition-speed-regular);
+
 	/* background-color: linear-gradient(to top, #6366f1 0%, #da46ef 42%, #f1f4fd 83%); */
 	background-color: var(--primary-darkmode-background-color);
 	h1 {
 		color: var(--darkmode-color-white);
+		transition: var(--transition-speed-regular);
 	}
 }

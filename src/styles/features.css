@@ -1,0 +1,27 @@
+.feature-list {
+	display: flex;
+	flex-direction: column;
+	background-color: #f3f6ff;
+	border-radius: 0.5rem;
+  padding-bottom: 2rem;
+}
+.feature {
+	margin-inline: 2rem;
+	margin-block: 1rem;
+	border: 0.5rem solid #6366f1;
+	border-radius: 0.5rem;
+	h3 {
+		font-weight: 800;
+		color: black;
+		margin: 1rem;
+	}
+	h5 {
+		font-weight: 600;
+		color: black;
+		margin: 1rem;
+	}
+	p {
+		color: black;
+		margin: 1rem;
+	}
+}
